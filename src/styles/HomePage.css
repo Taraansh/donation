@@ -1,0 +1,146 @@
+.home-heading {
+    border-radius: 0px 0px 70px 70px;
+    background-color: #EC9D45;
+    height: 350px;
+    max-width: 1280px;
+}
+
+.home-front-container {
+    position: relative;
+    border-radius: 0px 0px 70px 70px;
+    height: 550px;
+}
+
+.donate-card {
+    width: 260px;
+    height: 250px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    padding: 2rem 1rem;
+    top: 257px;
+}
+
+.home-discover-menu {
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-left-input{
+    font-size:1.9rem; border-radius:10px; border-width:0; padding:10px;
+    }
+/* Media query for Samsung Galaxy Fold */
+@media screen and (max-width: 280px) and (min-height: 653px) {
+
+    /* Your CSS styles for the Samsung Galaxy Fold go here */
+    .text-2 {
+        font-size: 3rem;
+    }
+
+    .donate-card {
+        width: 227px;
+        height: 244px;
+    }
+
+    .donate-card .card-body input {
+        padding: 0;
+    }
+
+    .donate-card .card-body {
+        padding: 0;
+    }
+    .home-discover-menu {
+        flex-direction: column-reverse;
+    }
+
+    .home-discover-menu #menu-left {
+        font-size: 2rem !important;
+        margin-bottom: 1rem;
+    }
+
+    .home-discover-menu #menu-left form input {
+        font-size: 0.7rem !important;
+        margin-left: 0 !important;
+        }
+
+    .home-discover-menu #menu-left form button {
+        font-size: 0.5rem !important;
+    }
+    #menu-right img
+    {
+        border-radius: 10px !important;
+    }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 576px) {
+    .home-front-container{
+        height: 500px;
+    }
+    .donate-card {
+        top: 215px;
+    }
+
+    .home-heading {
+        height: 300px;
+
+    }
+
+    .home-discover-menu {
+        flex-direction: column-reverse;
+    }
+
+    .home-discover-menu #menu-left {
+        font-size: 2rem !important;
+        margin-bottom: 1rem;
+    }
+
+    .home-discover-menu #menu-left h1 {
+        font-size: 2rem !important;
+        margin: 1rem 0 !important;
+    }
+
+    .menu-left-input{
+        font-size: 1rem !important;
+    }
+
+    .home-discover-menu #menu-left form button {
+        font-size: 0.7rem !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .home-discover-menu {
+        flex-direction: column-reverse;
+    }
+
+    .home-discover-menu #menu-left {
+        font-size: 2rem !important;
+        margin-bottom: 1rem;
+    }
+
+    .home-discover-menu #menu-left h1 {
+        margin: 1rem 0 !important;
+    }
+
+    .home-discover-menu #menu-left form input {
+        font-size: 2rem !important;
+    }
+
+    .home-discover-menu #menu-left form button {
+        font-size: 2rem !important;
+    }
+    #menu-right img
+    {
+        width: 40% !important;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .container-xl {
+        max-width: 2000px;
+    }
+}

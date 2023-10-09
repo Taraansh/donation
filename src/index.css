@@ -29,7 +29,9 @@ body::-webkit-scrollbar {
   font-family: 'Montserrat', sans-serif !important;
   font-size: 7rem;
 }
-
+.card-img-top{
+  width: 30% !important;
+}
 .icon-color-1
 {
   color: #3A2416;
@@ -37,7 +39,7 @@ body::-webkit-scrollbar {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   /* Your tablet-specific CSS rules go here */
   .text-2 {
-    font-size: 4rem; /* Adjust font size for smaller screens */
+    font-size: 6rem; /* Adjust font size for smaller screens */
 }
 .text-1 {
     font-size: 1rem; /* Adjust font size for smaller screens */
@@ -61,6 +63,6 @@ body::-webkit-scrollbar {
       font-size: 0.5rem; /* Adjust font size for even smaller screens */
   }
   .text-2{
-      font-size: 2rem; /* Adjust font size for even smaller screens */
+      font-size: 3.5rem; /* Adjust font size for even smaller screens */
   }
 }
