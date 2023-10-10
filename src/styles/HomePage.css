@@ -28,9 +28,34 @@
     justify-content: space-between;
     align-items: center;
 }
-.menu-left-input{
-    font-size:1.9rem; border-radius:10px; border-width:0; padding:10px;
-    }
+
+.menu-left-input {
+    font-size: 1.9rem;
+    border-radius: 10px;
+    border-width: 0;
+    padding: 10px;
+}
+
+.impact-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+}
+
+.impact-section p {
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    color: #3A2416;
+}
+.impact-subHeaders
+{
+    font-size: 2rem;
+}
+.story-card{
+    width: 18rem;
+    border-radius: 10px;
+}
 /* Media query for Samsung Galaxy Fold */
 @media screen and (max-width: 280px) and (min-height: 653px) {
 
@@ -51,6 +76,7 @@
     .donate-card .card-body {
         padding: 0;
     }
+
     .home-discover-menu {
         flex-direction: column-reverse;
     }
@@ -63,22 +89,23 @@
     .home-discover-menu #menu-left form input {
         font-size: 0.7rem !important;
         margin-left: 0 !important;
-        }
+    }
 
     .home-discover-menu #menu-left form button {
         font-size: 0.5rem !important;
     }
-    #menu-right img
-    {
+
+    #menu-right img {
         border-radius: 10px !important;
     }
 }
 
 /* Media query for even smaller screens */
 @media screen and (max-width: 576px) {
-    .home-front-container{
+    .home-front-container {
         height: 500px;
     }
+
     .donate-card {
         top: 215px;
     }
@@ -102,12 +129,24 @@
         margin: 1rem 0 !important;
     }
 
-    .menu-left-input{
+    .menu-left-input {
         font-size: 1rem !important;
     }
 
     .home-discover-menu #menu-left form button {
         font-size: 0.7rem !important;
+    }
+
+    .impact-section p {
+        font-size: 1.5rem;
+        padding: 0 1rem;
+    }
+    .impact-subHeaders
+    {
+        font-size: 1rem;
+    }
+    .story-card{
+        width: 13rem;
     }
 }
 
@@ -132,8 +171,8 @@
     .home-discover-menu #menu-left form button {
         font-size: 2rem !important;
     }
-    #menu-right img
-    {
+
+    #menu-right img {
         width: 40% !important;
     }
 
