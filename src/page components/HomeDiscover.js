@@ -16,10 +16,10 @@ function HomeDiscover() {
           <img style={{ margin: 'auto', borderRadius: '40px', width: '65%' }} src={logo} alt="Bootstrap" />
         </div>
       </div>
-      <div className='bg-color-1 p-5' style={{ borderRadius: '40px' }}>
+      <div className='bg-color-1 p-5 my-5' style={{ borderRadius: '40px', boxShadow: 'rgba(0, 0, 0, 0.56) 0px 22px 70px 4px', }}>
         <h1 className='text-center' style={{ fontWeight: 'bold' }}>Our Impact</h1>
         <div >
-          <div className='impact-section'>
+          <div className='impact-section' >
             <p>
               <span style={{fontWeight:'bold'}}>23k+</span>
               <span className='impact-subHeaders'>Affliated</span>
