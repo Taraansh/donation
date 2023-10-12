@@ -32,6 +32,10 @@ body::-webkit-scrollbar {
 .card-img-top{
   width: 30% !important;
 }
+.card-img-profile{
+  width: 40% !important;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
 .icon-color-1
 {
   color: #3A2416;

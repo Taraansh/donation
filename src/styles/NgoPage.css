@@ -1,0 +1,89 @@
+.ngo-front-container {
+    position: relative;
+    border-radius: 0px 0px 70px 70px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ngo-input {
+    font-size: 1.9rem;
+    border-radius: 10px;
+    border-width: 0;
+    padding: 10px;
+    width: 50vw;
+}
+
+.profile-card {
+    width: 18rem;
+    border-radius: 10px;
+    padding: 3rem 0;
+    position: relative;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.profile-card button {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.profile-card i {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+.profile-btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 170px;
+    margin: auto;
+    bottom: -19px;
+    font-size: 1.5rem;
+}
+
+/* Media query for Samsung Galaxy Fold */
+@media screen and (max-width: 280px) and (min-height: 653px) {
+
+    /* Your CSS styles for the Samsung Galaxy Fold go here */
+    .text-2 {
+        font-size: 3rem;
+    }
+
+    .profile-card {
+        width: 10rem !important;
+    }
+    
+.profile-btn {
+    width: 130px;
+    font-size: 1rem;
+}
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 576px) {
+    .ngo-front-container {
+        height: 170px;
+        align-items: flex-start;
+
+    }
+
+    .ngo-input {
+        font-size: 1rem !important;
+    }
+
+    .ngo-front-container form button {
+        font-size: 0.7rem !important;
+    }
+
+    .ngo-front-container h1 {
+        font-size: 2rem !important;
+        margin: 0.5rem 0 !important;
+    }
+
+    .profile-card {
+        width: 13rem;
+    }
+}
