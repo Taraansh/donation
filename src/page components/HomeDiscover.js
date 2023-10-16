@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/HomePage.css'
 import logo from '../assets/brown puppy.png'
+import paperPlane from '../assets/paper-plane.png'
 function HomeDiscover() {
   return (
     <div className='container' style={{ color: 'white' }}>
@@ -8,12 +9,12 @@ function HomeDiscover() {
         <div id='menu-left'>
           <h1 style={{ marginBottom: '57px', fontSize: '4rem', fontWeight: 'bold' }}>Discover NGO's</h1>
           <form action="submit" style={{ display: 'flex', alignItems: 'center' }}>
-            <input className='mx-2 menu-left-input' placeholder='Enter Your Location' type="text" />
-            <button className='btn btn-primary' style={{ fontSize: '1.8rem', padding: '10px' }} >submit</button>
+            <input className='mx-2 menu-left-input text-center input-donate' placeholder='Enter Your Location' type="text" />
+            <button className='btn btn-donate btn-light' style={{ fontSize: '1.8rem', padding: '10px' }} ><img src={paperPlane} alt="paper-plane" /></button>
           </form>
         </div>
         <div id='menu-right' style={{ textAlign: 'center' }}>
-          <img style={{ margin: 'auto', borderRadius: '40px', width: '65%' }} src={logo} alt="Bootstrap" />
+          <img style={{ margin: 'auto', borderRadius: '40px', width: '65%', boxShadow: 'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px' }} src={logo} alt="Bootstrap" />
         </div>
       </div>
       <div className='bg-color-1 p-5 my-5' style={{ borderRadius: '40px', boxShadow: 'rgba(0, 0, 0, 0.56) 0px 22px 70px 4px', }}>
