@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import dogPaw from '../assets/dog-paw.png'
 import { Link } from 'react-router-dom'
 import NgoCases from '../page components/NgoCases'
+import '../styles/NgoProfilePage.css'
 function NgoProfilePage() {
 
     const {id} = useParams()
@@ -28,11 +29,11 @@ function NgoProfilePage() {
     return (
         <div className="container text-center my-3">
             <div className='container' style={{ backgroundColor: '#EC9D45', borderRadius: '0.7rem', padding: '2rem' }}>
-                <div className="row">
-                    <div className="col-5">
+                <div className="row profile-row">
+                    <div className="col-5 profile-col">
                         <img  src={`http://127.0.0.1:8000${ngo.ngo_logo}`} className="img-fluid rounded float-start" alt="..." />
                     </div>
-                    <div className="col-7 table-responsive">
+                    <div className="col-7 profile-col table-responsive">
                         <table className="table">
                             <thead>
                                 <tr>
@@ -100,19 +101,8 @@ function NgoProfilePage() {
                                 </Link>
                             </div>
                         </div>
-                        {ngo.cases.cases.map((caseItem, index) => (
-                        <tr key={index}>
-                            <th scope="row">{index}</th>
-                            <td>{caseItem.ngo_name}</td>
-                            <td>Active</td>
-                            <td>
-                                <button className='btn btn-primary' type='button'>Details</button>
-                            </td>
-                        </tr>
-                            ))}
 
-                        {JSON.stringify(ngo.cases.cases,null,4)}
-                <NgoCases element = {ngo.cases.cases}/>
+            <NgoCases cases = {ngo?.cases?.cases}/>
             </div>
         </div>
     )

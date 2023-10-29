@@ -1,0 +1,14 @@
+.table-responsive
+{
+    display: flex;
+}
+@media screen  and (max-width: 720px) {
+
+    .table-responsive{
+        flex-direction: column;
+    }
+    .profile-col
+    {
+        width: 100% !important;
+    }
+    }
