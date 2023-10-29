@@ -11,10 +11,10 @@ function NgoCases({cases}) {
     }
 
     return (
-        <div className='mt-5'>
-            <h1 style={{ color: '#ffffff', marginLeft: '0' }}>Cases</h1>
+        <div>
             <div className='table-responsive'>
-                <table className="table table-striped table-light table-bordered">
+                <table className="table table-striped table-light table-bordered caption-top">
+                    <caption><h1 style={{ color: '#ffffff', marginLeft: '0' }}>Cases</h1></caption>
                     <thead>
                         <tr>
                             <th scope="col">ID</th>
@@ -24,17 +24,16 @@ function NgoCases({cases}) {
                         </tr>
                     </thead>
                     <tbody>
-                    {/* {cases.map((caseItem, index) => (
+                    {cases?.map((caseItem, index) => (
                         <tr key={index}>
                             <th scope="row">{index}</th>
-                            <td>{caseItem.ngo_name}</td>
-                            <td>Active</td>
+                            <td>{caseItem.type_of_case}</td>
+                            <td>{caseItem.status_of_case}</td>
                             <td>
                                 <button className='btn btn-primary' type='button' onClick={handleShow}>Details</button>
                             </td>
                         </tr>
-                            ))} */}
-                            {/* {JSON.stringify(ngo,null,4)} */}
+                            ))}
                     </tbody>
                 </table>
             </div>
