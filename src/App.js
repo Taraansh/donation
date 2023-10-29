@@ -4,6 +4,7 @@ import HomePage from "./Pages/HomePage";
 import NavBar from "./components/NavBar";
 import NgoPage from "./Pages/NgoPage";
 import Footer from "./components/Footer";
+import NgoProfilePage from "./Pages/NgoProfilePage";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage/>} />
             <Route path="/ngopage" element={<NgoPage/>} />
+            <Route path="/ngoprofile/:id" element={<NgoProfilePage/>} />
           </Routes>
           <Footer/>
      </Router>

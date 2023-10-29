@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../assets/dog-claw.png'
 import '../styles/HomePage.css'
+import dogpaw from '../assets/dog-paw.png'
 function HomeFront() {
     return (
         <>
@@ -12,8 +13,8 @@ function HomeFront() {
                 <div className="card text-center donate-card " >
                     <img className="card-img-top" style={{ margin: 'auto' }} src={logo} alt="Bootstrap" />
                     <div className="card-body">
-                        <input type="Enter Amount" className='my-2 text-center' placeholder="Enter Amount" />
-                        <button className="btn btn-primary">Donate here</button>
+                        <input type="Enter Amount" className='my-2 text-center input-donate' placeholder="Enter Amount" />
+                        <button className="btn btn-donate btn-light">Donate here <img width='13%' style={{marginLeft:'10px'}} src={dogpaw} alt="dog-paw" /></button>
                     </div>
                 </div>
             </div>
